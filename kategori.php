@@ -1,4 +1,4 @@
-<tr?php
+<?php
 
 include '.includes/header.php';
 
@@ -20,7 +20,7 @@ toggle="modal" data-bs-target="#addCategory">
 
 <div class="card-body">
   <div class="table-responsive text-nowrap">
-    <tables id="datatable" class="table table-hover">
+    <table id="datatable" class="table table-hover">
       <thead>
         <tr class="text-center">
           <th width="50px">#</th>
@@ -28,13 +28,13 @@ toggle="modal" data-bs-target="#addCategory">
           <th width="150px">Pilihan</th>
         </tr>
       </thead>
-      <tbody class="table-border-bottom-8"></tbody>
+      <tbody class="table-border-bottom-0">
 
       <?php
       $index = 1;
       $query = "SELECT * FROM categories";
       $exec = mysqli_query($conn, $query);
-      while ($category = mysqli_fetch_assoc($exec))
+      while ($category = mysqli_fetch_assoc($exec)) :
       ?>
      <tr>
 
@@ -69,10 +69,9 @@ toggle="modal" data-bs-target="#addCategory">
     </div>
   </div>
 </div>
-<?php include '.includes/footer.php'; ?
+<?php include '.includes/footer.php'; ?>
 
-<div class="modal fade" id="addCategory" tabindex="-1" aria-
-hidden="true">
+<div class="modal fade" id="addCategory" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -94,9 +93,9 @@ required/>
                 data-bs-dismiss="modal">Batal</button>
                 <button type="submit" name="simpan" class="btn btn-
 primary">Simpan</button>
-                </div>
-            </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
 </div>
