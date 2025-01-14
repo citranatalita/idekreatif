@@ -58,7 +58,9 @@ toggle="modal" data-bs-target="#addCategory">
   </div>
 </td>
             </tr>
+            <!--MODAL UNTUK HAPUS DATA KATEGORI -->
 
+            <!--MODAL UNTUK UPDATE DATA KATEGORI-->
 
 
 
