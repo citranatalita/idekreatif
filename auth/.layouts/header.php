@@ -20,7 +20,6 @@ if (isset($_SESSION["username"]) || isset($_SESSION["role"])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>

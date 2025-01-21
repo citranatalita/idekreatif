@@ -3,7 +3,7 @@ require_once("../config.php");
 
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $name = $_POST["name"];
     $password = $_POST["password"];
@@ -20,7 +20,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
     $_SESSION['notification'] = [
          'type' => 'danger',
-        'message' => 'Registrasi gagal!: ' . mysqli_error($conn)
+        'message' => 'gagal Registrasi: ' . mysqli_error($conn)
     ];
 }
 header('Location: login.php');
