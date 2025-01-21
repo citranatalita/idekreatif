@@ -126,7 +126,7 @@ warning">Update</button>
   </div>
 </div>
 <?php include '.includes/footer.php'; ?>
-
+      <!-- Modal untuk tambah data kategori -->
 <div class="modal fade" id="addCategory" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -140,14 +140,15 @@ warning">Update</button>
             <div>
                 <label for="namaKategori" class="form-label">Nama
 Kategori</label>
+      <!-- Input untuk nama kategori baru -->
 
             <input type="text" class="form-control" name="category_name"
 required/>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary"
-                data-bs-dismiss="modal">Batal</button>
-                <button type="submit" name="simpan" class="btn btn-
+             data-bs-dismiss="modal">Batal</button>
+             <button type="submit" name="simpan" class="btn btn-
 primary">Simpan</button>
           </div>
         </form>
