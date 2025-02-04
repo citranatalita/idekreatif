@@ -99,16 +99,14 @@ include '.includes/toast_notification.php';
                             </div>
                         </div>
                     <?php endwhile; ?>
-                </tbody>
-                </table>
-                </div>
-                </div>
-                </div>
-                <!-- Akhir tabel dengan baris yang dapat di-hover -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-
-
-            <?php
-            include (".includes/footer.php");
-            ?>
+                    <!-- Akhir tabel dengan baris yang dapat di-hover -->
+        </div>
+    </div>
+                    <?php
+                    include (".includes/footer.php");
+                    ?>
