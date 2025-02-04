@@ -38,6 +38,7 @@ if (isset($_POST['simpan'])) {
                 'type' => 'danger',
                 'message' => 'Error adding post: ' . $conn->error
             ];
+        }
         } else {
             // Notifikasi error jika unggahan gambar gagal
             $_SESSION['notification'] = [
