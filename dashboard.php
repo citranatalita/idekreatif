@@ -1,4 +1,4 @@
-<tr?php
+<?php
 include (".includes/header.php");
 $title = "Dashboard";
 // Menyertakan file untuk menampilkan notifikasi (jika ada)
