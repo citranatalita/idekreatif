@@ -13,15 +13,12 @@ include '.includes/header.php';
             enctype="multipart/form-data">
             <!-- Input untuk judul postingan -->
             <div class="mb-3">
-              <label for="post_title" class="form-label">Judul
-                Postingan</label>
-              <input type="text" class="form-control" name="post_title"
-                required>
+              <label for="post_title" class="form-label">Judul Postingan</label>
+              <input type="text" class="form-control" name="post_title" required>
             </div>
             <!-- Input untuk mengunggah gambar -->
             <div class="mb-3">
-              <label for="formFile" class="form-label">Unggah
-                Gambar</label>
+              <label for="formFile" class="form-label">Unggah Gambar</label>
               <input class="form-control" type="file" name="image"
                 accept="image/*" />
             </div>
