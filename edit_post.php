@@ -65,4 +65,35 @@
                 // Mengambil data kategori dari database
                 $queryCategories = "SELECT * FROM categories";
                 $resultCategories = $conn->query($queryCategories);
-                
+
+                // Menambahkan opsi ke dropdown
+                  if ($resultCategories->num_rows > 0) {
+                  while ($row = $resultCategories->fetch_assoc()) {
+               // Menandai kategori yang sudah dipilih
+                  $selected = ($row["category_id"] == $post['category_id']) ? "selected" : "";
+                  echo "<option value='" . $row["category_id"] . "' $selected>" . $row["category_name"] . "</option>";
+                }
+             }
+          ?>
+      </select>
+    </div>
+
+    <!-- Textarea untuk konten postingan -->
+    <div class="mb-3">
+      <label for="content" class="form-label">Konten</label>
+      <textarea class="form-control" id="content" name="content" required><?php echo $post['content']; ?></textarea>
+    </div>
+
+    <!-- Tombol untuk memperbarui postingan -->
+    <button type="submit" name="update" class="btn btn-primary">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php
+// Memasukkan footer halaman
+include '.includes/footer.php';
+?>
